@@ -10,14 +10,15 @@ Activation of Joule requires configuration in multiple systems.  It's important 
 ## 2. Verify Global Account Entitlements
 
 1. Access [BTP Cockpit URL](https://cockpit.btp.cloud.sap).
-2. Select the BTP Global Account that has the Joule entitlements and click Continue.
+2. Select the BTP Global Account and click Continue.</br>
    ![Preparation](1.png)
-4. From the Navigation Panel expand Entitlements and click **Service Assignments**.
+4. From the Navigation Panel expand **Entitlements** and click **Service Assignments**.
 5. Search for **Joule** and validate that plan below is available.
    
 | Application     | Technical Name | Plan        | Required Quota | Remaining Quota |
 | ----------- | ----------- | ----------- | -------------- | --------------- |
 | Joule      | das-application      | foundation       |     1            |          limited       |
+![Preparation](2.jpg)
 
 5. Clear existing search text and search for **SAP Build Work Zone, standard edition**.  Validate that following 2 plans are available for SAP Build Work Zone:
    
@@ -25,7 +26,7 @@ Activation of Joule requires configuration in multiple systems.  It's important 
 | ----------- | ----------- | ----------- | -------------- | --------------- |
 | SAP Build Work Zone, standard edition   | SAPLaunchpad       | foundation or standard       |      1           |       limited          |
 | SAP Build Work Zone, standard edition      | build-workzone-standard      | foundation or standard      |     1            |          limited       |
-   
+ ![Preparation](3.jpg)  
 If the entitlements are not visible it could be due to one these reasons:
   1) You don't have licenses for Joule.
   2) Joule entilements were added to different BTP Global Account to which you don't have Global Account Admin access.
