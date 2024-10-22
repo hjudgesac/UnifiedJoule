@@ -9,28 +9,29 @@ Activation of Joule requires configuration in multiple systems.  It's important 
   
 ## 2. Verify Global Account Entitlements
 
-Verify that your global account is configured with the following entitlements. For more information, see [Managing Entitlements and Quotas Using the Cockpit](https://help.sap.com/docs/BTP/65de2977205c403bbc107264b8eccf4b/c8248745dde24afb91479361de336111.html).
-
+1. Access BTP Cockpit URL.
+2. Select the BTP Global Account that has the Joule entitlements and click Continue.
+3. From the Navigation Panel expand Entitlements and click **Service Assignments**.
+4. Search for **Joule** and validate that plan below is available.
+   
 | Application     | Technical Name | Plan        | Required Quota | Remaining Quota |
 | ----------- | ----------- | ----------- | -------------- | --------------- |
 | Joule      | das-application      | foundation       |     1            |          limited       |
-| SAP Build Work Zone, standard edition   | SAPLaunchpad       | foundation or standard       |      1           |       limited          |
 
-
-| Service     | Technical Name | Plan        | Required Quota | Remaining Quota |
+5. Clear existing search text and search for **SAP Build Work Zone, standard edition**.  Validate that following 2 plans are available for SAP Build Work Zone:
+   
+| Application     | Technical Name | Plan        | Required Quota | Remaining Quota |
 | ----------- | ----------- | ----------- | -------------- | --------------- |
+| SAP Build Work Zone, standard edition   | SAPLaunchpad       | foundation or standard       |      1           |       limited          |
 | SAP Build Work Zone, standard edition      | build-workzone-standard      | foundation or standard      |     1            |          limited       |
-
+   
 If the entitlements are not visible it could be due to one these reasons:
   1) You don't have licenses for Joule.
   2) Joule entilements were added to different BTP Global Account to which you don't have Global Account Admin access.
   3) The start date for the Joule contract is at future date hence the entilements won't be visible in BTP until that date.
 In the scenarios above, please work with Account Executive, BTP Customer Success Partner or SuccessFactors Customer Success Partner to resolve the entitlements issue prior to proceeding further with this mission.
 
-## 3. Validate Global User ID of SuccessFactors User
 
-In order to use Joule, SuccessFactors users must have a Global User ID(GUID) field populated in their SuccessFactors user profile and this GUID should match what's in the SAP Cloud Identity Authentication (IAS) user profile.  This should already be in place if SuccessFactors integration to SAP Cloud Identity Services was done following best practices and a provisioning job was run to replicate user profiles from SuccessFactors to IAS. If the user replication job was not run in the past or if there were errors for certain users during the job execution, those users will not have the GUID field populated in SuccessFactors.  The **Manage Login Accounts** app can be used to visualize the GUID field in SuccessFactors and compare it to the user profile in IAS.  For more information on how to get access to the Manage Login Accounts application, follow [2859043 - Manage Login Accounts tool](https://userapps.support.sap.com/sap/support/knowledge/en/2859043).<br/>
-![prepare_activation](5.jpg)
 
 ## 4. SAP Cloud Identity Provisioning Service running on Neo or SAP Cloud Identity Services Landscape
 
