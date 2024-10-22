@@ -3,7 +3,7 @@ Before you can activate Joule there are certain number of pre-requisites that mu
 ## 1. User Personas Required for Joule activation
 
 Activation of Joule requires configuration in multiple systems.  It's important to have the right stakeholders involved when setting up the configuration.  In order to setup Joule the following user personas are required:
-* SuccessFactors Admin
+* Admins of the system for which Joule will be setup.  For example, SAP SuccessFactors, SAP S/4HANA Cloud Admin etc.
 * SAP BTP Global Account Admin
 * SAP Cloud Identity Services Admin
   
