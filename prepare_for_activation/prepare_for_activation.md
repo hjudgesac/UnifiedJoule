@@ -11,8 +11,9 @@ Activation of Joule requires configuration in multiple systems.  It's important 
 
 1. Access [BTP Cockpit URL](https://cockpit.btp.cloud.sap).
 2. Select the BTP Global Account that has the Joule entitlements and click Continue.
-3. From the Navigation Panel expand Entitlements and click **Service Assignments**.
-4. Search for **Joule** and validate that plan below is available.
+   ![Preparation](1.png)
+4. From the Navigation Panel expand Entitlements and click **Service Assignments**.
+5. Search for **Joule** and validate that plan below is available.
    
 | Application     | Technical Name | Plan        | Required Quota | Remaining Quota |
 | ----------- | ----------- | ----------- | -------------- | --------------- |
