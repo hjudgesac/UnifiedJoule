@@ -12,57 +12,41 @@ Activation of Joule requires configuration in multiple systems.  It's important 
 1. Access [BTP Cockpit URL](https://cockpit.btp.cloud.sap).
 2. Select the BTP Global Account and click Continue.</br>
    ![Preparation](1.png)
-4. From the Navigation Panel expand **Entitlements** and click **Service Assignments**.
-5. Search for **Joule** and validate that plan below is available.
+3. From the Navigation Panel expand **Entitlements** and click **Service Assignments**.
+4. Search for **Joule** and validate that plan below is available.
    
-| Application     | Technical Name | Plan        | Required Quota | Remaining Quota |
-| ----------- | ----------- | ----------- | -------------- | --------------- |
-| Joule      | das-application      | foundation       |     1            |          limited       |
-![Preparation](2.jpg)
+    | Application     | Technical Name | Plan        | Required Quota | Remaining Quota |
+    | ----------- | ----------- | ----------- | -------------- | --------------- |
+    | Joule      | das-application      | foundation       |     1            |          limited       |
+  
+    ![Preparation](2.jpg)
 
 5. Clear existing search text and search for **SAP Build Work Zone, standard edition**.  Validate that following 2 plans are available for SAP Build Work Zone:
-   
-| Application     | Technical Name | Plan        | Required Quota | Remaining Quota |
-| ----------- | ----------- | ----------- | -------------- | --------------- |
-| SAP Build Work Zone, standard edition   | SAPLaunchpad       | foundation or standard       |      1           |       limited          |
-| SAP Build Work Zone, standard edition      | build-workzone-standard      | foundation or standard      |     1            |          limited       |
- ![Preparation](3.jpg)  
-If the entitlements are not visible it could be due to one these reasons:
-  1) You don't have licenses for Joule.
-  2) Joule entilements were added to different BTP Global Account to which you don't have Global Account Admin access.
-  3) The start date for the Joule contract is at future date hence the entilements won't be visible in BTP until that date.
-In the scenarios above, please work with Account Executive, BTP Customer Success Partner or SuccessFactors Customer Success Partner to resolve the entitlements issue prior to proceeding further with this mission.
 
+    | Application     | Technical Name | Plan        | Required Quota | Remaining Quota |
+    | ----------- | ----------- | ----------- | -------------- | --------------- |
+    | SAP Build Work Zone, standard edition   | SAPLaunchpad       | foundation or standard       |      1           |       limited          |
+    | SAP Build Work Zone, standard edition      | build-workzone-standard      | foundation or standard      |     1            |          limited       |
+  
+     ![Preparation](3.jpg)  
+  If the entitlements are not visible, it could be due to one of these reasons:
+    1) You don't have licenses for Joule.
+    2) Joule entilements were added to different BTP Global Account to which you don't have Global Account Admin access.
+    3) The start date for the Joule contract is at future date hence the entilements won't be visible in BTP until that date.
+  In the scenarios above, please work with Account Executive, BTP Customer Success Partner or SuccessFactors Customer Success Partner to resolve the entitlements issue prior to proceeding further with this mission.
 
+## 4. Choose Data Center for Joule Setup
 
-## 4. SAP Cloud Identity Provisioning Service running on Neo or SAP Cloud Identity Services Landscape
+Joule is BTP Service that works with multiple SAP solutions.  The number of SAP applications supported with Joule is growning on a regular basis so it's important to choose a data center for Joule setup that can work for various SAP applications you may have in your landscape.  There are several factors that determine which data center to choose for Joule setup.  Some factors to consider:
+1)  What are the currently supported datacenters for Joule?
+2)  Which SAP solutions will Joule be setup for and what are datacenters of those solutions?
+3)  Are there any legal requirements to choose a datacenter in particular region?
 
-As part of the activation steps we need to leverage SAP Cloud Identity Provisioning Service to read users from SuccessFactors and provision them to SAP Build Work Zone.  This requires that SAP Build Work Zone, standard edition is available as a connector under target systems in SAP Cloud Identity Provisioning Service (IPS).  This connector may not be available on IPS tenants running on NEO landscapes.  It's recommended customers migrate IPS from NEO to IPS running on SAP Cloud Identity Provisioning Service (SCI) landscape.  In most cases this migration can be done in a matter of minutes.  For more information on how to perform this migration, refer to the following links:
+It's important to choose the correct data center when creating the subaccount.  How do you determine which data center to choose whAs part of the activation steps we need to leverage SAP Cloud Identity Provisioning Service to read users from SuccessFactors and provision them to SAP Build Work Zone.  This requires that SAP Build Work Zone, standard edition is available as a connector under target systems in SAP Cloud Identity Provisioning Service (IPS).  This connector may not be available on IPS tenants running on NEO landscapes.  It's recommended customers migrate IPS from NEO to IPS running on SAP Cloud Identity Provisioning Service (SCI) landscape.  In most cases this migration can be done in a matter of minutes.  For more information on how to perform this migration, refer to the following links:
 * [Blog: Go for your quick win! Migrate Identity Provisioning tenants to SAP Cloud Identity infrastructure](https://community.sap.com/t5/technology-blogs-by-sap/go-for-your-quick-win-migrate-identity-provisioning-tenants-to-sap-cloud/ba-p/13536739)
 * [Help Documenation: Migrate Identity Provisioning Bundle Tenant](https://help.sap.com/docs/identity-provisioning/identity-provisioning/migrate-identity-provisioning-bundle-tenant)
 
-## 5. Create API User in SuccessFactors
 
-An API user with **Allow Admin to Access OData API through Basic Authentication** permission is required in SuccessFactors.  This user will be used to create the BTP destinations in later steps.  If the user doesn't already exist, follow the steps in the **Create API User in SuccessFactors** card to create a new API user with the correct permissions.  If you plan to use an existing API user from SuccessFactors, confirm that there aren't any IP restrictions in place for the API user.  If such IP restrictions are in place then the IPs of BTP data center where Joule will be setup must also be added to the list of whitelisted IPs. To see the list of BTP datacenters and the corresponding IPs, follow [Regions and API Endpoints Available for the Cloud Foundry Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/regions-and-api-endpoints-available-for-cloud-foundry-environment).  See [2253200 - How to restrict the API access of a specific user by IP addresses] (https://userapps.support.sap.com/sap/support/knowledge/en/2253200) for more information.<br/>
-
-![prepare_activation](3.jpg)
-
-## 6. Activate Employee Central Quick Links
-
-Joule supports various use cases that are specific to Employee Central module in SuccessFactors.  To enable Employee Central specific use cases, Employee Central Quick Links should already be enabled in SAP SuccessFactors.  If Employee Central Quick Links are not already enabled, follow the steps in **Activate Employee Central Quick Links** card.
-  
-## 7. Permissions Required in SuccessFactors
-
-* Permissions to schedule jobs in SuccessFactors.  See [Scheduled Job Manager](https://userapps.support.sap.com/sap/support/knowledge/en/2906009)
-* Permissions to [**Security Center >> X.509 Certificate Mapping**](https://userapps.support.sap.com/sap/support/knowledge/en/3300596).
-* Manage Permission Roles and Manage Permission Groups access.  See [Granting Administrators Access to RBP](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/cdd844b5f0744d238284e937deb73f39/0aa4fbb7d9914a448d70238b321ab101.html).
-* Permissions to access **Extension Center** (see [Enabling Extension Center](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/6c9f794920b947648737d914a669f195/f1eface4d74545c1a29a9de970b686d9.html?version=2405))  in SAP SuccessFactors Admin Center that include:
-  * **Admin Access to MDF OData API** permission from the **Metadata Framework** category.
-    ![prepare_activation](7.jpg)
-  * **Create Integration with SAP BTP** permission from the **Manage Extensions** on SAP BTP category.
-    ![prepare_activation](6.jpg)
-
-**NOTE:** If Extension Center is not visible in Admin Center, choose either one of 2 options documented in note [3414682 - Unable to View Extension Center even related permissions are granted](https://userapps.support.sap.com/sap/support/knowledge/en/3414682) to activate Extension Center.
 
 ## 8. Determine SuccessFactors Data Center
 
