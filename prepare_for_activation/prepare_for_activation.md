@@ -42,15 +42,16 @@ Joule is BTP Service that works with multiple SAP solutions.  The number of SAP 
 1)  What are the currently supported datacenters for Joule?
 2)  Which SAP solutions will Joule be setup for and what are datacenters of those solutions?
 3)  Are there any legal requirements to choose a datacenter in particular region?
+4)  Do you have prefernce for particular hyperscalar such AWS, Azure, Google etc.?
 
-The process to follow for data center selection for Joule setup is described in the picture below:
+The picture below depicts the process to follow to determine data center selection.
  ![Preparation](4.jpg)
-How do you determine which data center to choose whAs part of the activation steps we need to leverage SAP Cloud Identity Provisioning Service to read users from SuccessFactors and provision them to SAP Build Work Zone.  This requires that SAP Build Work Zone, standard edition is available as a connector under target systems in SAP Cloud Identity Provisioning Service (IPS).  This connector may not be available on IPS tenants running on NEO landscapes.  It's recommended customers migrate IPS from NEO to IPS running on SAP Cloud Identity Provisioning Service (SCI) landscape.  In most cases this migration can be done in a matter of minutes.  For more information on how to perform this migration, refer to the following links:
-* [Blog: Go for your quick win! Migrate Identity Provisioning tenants to SAP Cloud Identity infrastructure](https://community.sap.com/t5/technology-blogs-by-sap/go-for-your-quick-win-migrate-identity-provisioning-tenants-to-sap-cloud/ba-p/13536739)
-* [Help Documenation: Migrate Identity Provisioning Bundle Tenant](https://help.sap.com/docs/identity-provisioning/identity-provisioning/migrate-identity-provisioning-bundle-tenant)
-
-
-
+To complete Step 1, review the list of Joule supported data centers from the help page: [Data Centers Supported for Joule](https://help.sap.com/docs/joule/serviceguide/data-centers-supported-by-joule)
+Completion of Step 2 requires finding the data centers for the respective applications for which Joule will be setup.  This will be different for each application so refer to specific applicaton documenation to find the respective data centers.
+SuccessFactors: [2089448 - SuccessFactors Data Center Name, Location, Production Login URL, Production Domain Name, External Mail Server Details and Outbound IP addresses](https://me.sap.com/notes/0002089448)
+SAP S/4HANA Public Cloud: <Placehoder for documenation link>
+<Place holder for other LOB links>
+Example Scenario:
 ## 8. Determine SuccessFactors Data Center
 
 To validate whether SuccessFactors instance can be setup for Joule, you will need to find the correct data center for your SAP SuccessFactors instance.  To learn more, visit [2089448 - SuccessFactors Data Center Name, Location, Production Login URL, Production Domain Name, External Mail Server Details and Outbound IP addresses](https://me.sap.com/notes/0002089448)
