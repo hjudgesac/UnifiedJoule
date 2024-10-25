@@ -53,11 +53,11 @@ SAP S/4HANA Public Cloud: <Placehoder for documenation link>
 IBP Placeholder
 PLM Placholder
 
-Let's take a look at a hypthetical scenario showm in the picture below.  In this scenario, majority of the applications are in North American datacenters so it makes sense to choose one of the North American data centers for Joule setup.  The choice between US EAST (VA), US (Virginia), or US Central (IA) is entirely up to you based on your hyperscaler preferences.</br>
+Let's take a look at a hypthetical scenario shown in the picture below.  In this scenario, majority of the applications are in North American datacenters so it makes sense to choose one of the North American data centers for Joule setup.  The choice between US EAST (VA), US (Virginia), or US Central (IA) is entirely up to you based on your hyperscaler preference.</br>
  ![Preparation](5.jpg)
 
 ## 5. Confirm same SAP Cloud Identity Services is used across SAP applications
 
-To setup a Joule instance that works across different SAP applications, it's required that those applications are integrated with same SAP Cloud Identity Service tenant.  SAP provides a production and non-production instance of SAP Cloud Identity Services free of charge to SAP customers.  All non-prod SAP applications should be integrated with same non-prod Cloud Identity Services tenant and production ones with the production tenant.  If that's not the case in your environment, then it's not possible to use a single Joule instance that works across different SAP applications <br/>
-![prepare_activation](4.jpg)
+To setup a Joule instance that works across different SAP applications, it's required that those applications are integrated with same SAP Cloud Identity Service tenant.  SAP provides a production and non-production instance of SAP Cloud Identity Services free of charge to SAP customers.  All non-prod SAP applications should be integrated with same non-prod Cloud Identity Services tenant and production ones with the production tenant.  If that's not the case in your environment, then it's not possible to use a single Joule instance that works across different SAP applications.
+
 
