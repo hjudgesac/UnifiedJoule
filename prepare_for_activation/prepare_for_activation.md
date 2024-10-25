@@ -46,12 +46,15 @@ Joule is BTP Service that works with multiple SAP solutions.  The number of SAP 
 
 The picture below depicts the process to follow to determine data center selection.
  ![Preparation](4.jpg)
-To complete Step 1, review the list of Joule supported data centers from the help page: [Data Centers Supported for Joule](https://help.sap.com/docs/joule/serviceguide/data-centers-supported-by-joule)
-Completion of Step 2 requires finding the data centers for the respective applications for which Joule will be setup.  This will be different for each application so refer to specific applicaton documenation to find the respective data centers.
+For Step 1, review the list of Joule supported data centers from the help page: [Data Centers Supported for Joule](https://help.sap.com/docs/joule/serviceguide/data-centers-supported-by-joule)
+Step 2 requires finding the data centers for the respective applications for which Joule will be setup.  This will be different for each application so refer to specific applicaton documenation to find the respective data centers.
 SuccessFactors: [2089448 - SuccessFactors Data Center Name, Location, Production Login URL, Production Domain Name, External Mail Server Details and Outbound IP addresses](https://me.sap.com/notes/0002089448)
 SAP S/4HANA Public Cloud: <Placehoder for documenation link>
 <Place holder for other LOB links>
-Example Scenario:
+Let's take a hypthetical scenario show in the picture below.  In this scenario majority of the applications are in North American datacenters so it makes sense to choose one of the North American data centers for Joule setup.  The choice between US EAST (VA), US (Virginia), or US Central (IA) is entirely up to you based on your hyperscaler preferences.  
+ ![Preparation](5.jpg)
+
+
 ## 8. Determine SuccessFactors Data Center
 
 To validate whether SuccessFactors instance can be setup for Joule, you will need to find the correct data center for your SAP SuccessFactors instance.  To learn more, visit [2089448 - SuccessFactors Data Center Name, Location, Production Login URL, Production Domain Name, External Mail Server Details and Outbound IP addresses](https://me.sap.com/notes/0002089448)
