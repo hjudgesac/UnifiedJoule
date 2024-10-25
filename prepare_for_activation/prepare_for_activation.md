@@ -43,7 +43,7 @@ Joule is BTP Service that works with multiple SAP solutions.  The number of SAP 
 2)  Which SAP solutions will Joule be setup for and what are datacenters of those solutions?
 3)  Are there any legal requirements to choose a datacenter in particular region?
 
-The process 
+The process to follow for data center selection for Joule setup is described in the picture below:
  ![Preparation](4.jpg)
 How do you determine which data center to choose whAs part of the activation steps we need to leverage SAP Cloud Identity Provisioning Service to read users from SuccessFactors and provision them to SAP Build Work Zone.  This requires that SAP Build Work Zone, standard edition is available as a connector under target systems in SAP Cloud Identity Provisioning Service (IPS).  This connector may not be available on IPS tenants running on NEO landscapes.  It's recommended customers migrate IPS from NEO to IPS running on SAP Cloud Identity Provisioning Service (SCI) landscape.  In most cases this migration can be done in a matter of minutes.  For more information on how to perform this migration, refer to the following links:
 * [Blog: Go for your quick win! Migrate Identity Provisioning tenants to SAP Cloud Identity infrastructure](https://community.sap.com/t5/technology-blogs-by-sap/go-for-your-quick-win-migrate-identity-provisioning-tenants-to-sap-cloud/ba-p/13536739)
