@@ -51,51 +51,12 @@ Step 2 requires finding the data centers for the respective applications for whi
 SuccessFactors: [2089448 - SuccessFactors Data Center Name, Location, Production Login URL, Production Domain Name, External Mail Server Details and Outbound IP addresses](https://me.sap.com/notes/0002089448)
 SAP S/4HANA Public Cloud: <Placehoder for documenation link>
 <Place holder for other LOB links>
-Let's take a hypthetical scenario show in the picture below.  In this scenario majority of the applications are in North American datacenters so it makes sense to choose one of the North American data centers for Joule setup.  The choice between US EAST (VA), US (Virginia), or US Central (IA) is entirely up to you based on your hyperscaler preferences.  
+Let's take a look at a hypthetical scenario showm in the picture below.  In this scenario, majority of the applications are in North American datacenters so it makes sense to choose one of the North American data centers for Joule setup.  The choice between US EAST (VA), US (Virginia), or US Central (IA) is entirely up to you based on your hyperscaler preferences.  
  ![Preparation](5.jpg)
 
+## 5. Confirm same SAP Cloud Identity Services is used across SAP applications
 
-## 8. Determine SuccessFactors Data Center
-
-To validate whether SuccessFactors instance can be setup for Joule, you will need to find the correct data center for your SAP SuccessFactors instance.  To learn more, visit [2089448 - SuccessFactors Data Center Name, Location, Production Login URL, Production Domain Name, External Mail Server Details and Outbound IP addresses](https://me.sap.com/notes/0002089448)
-
-For example, DC68 data center tenants the screenshot shows the corresponding SuccessFactors tenant URLs.<br/>
-![prepare_activation](1.jpg)
-
-**Note**: If your SuccessFactors tenant is using common super domain, make note of the **Pre CSD Migration URL** of your tenant as well.  This URL will be used when running the booster in the BTP Global Account.
-
-## 9. Verify SuccessFactors Data Center
-
-SAP Joule is supported in subset of the SAP SuccessFactors datacenters.  Confirm that your SuccessFactors tenant is in the list of supported data centers for Joule.  See the list of [Data Center Mapping between SAP SuccessFactors and Joule](https://help.sap.com/docs/joule/serviceguide/data-center-mapping-between-sap-successfactors-and-joule).
-
-## 10. Find API URLs for SuccessFactors tenant
-
-We need to know the **API Server** and **mTLS Certificate Server** URLs for our SuccessFactors tenant.  This information can be found here: [List of SFSF API Servers](https://help.sap.com/docs/SAP_SUCCESSFACTORS_PLATFORM/d599f15995d348a1b45ba5603e2aba9b/af2b8d5437494b12be88fe374eba75b6.html)<br/>
-![prepare_activation](2.jpg)
-
-For example, for DC68 production SuccessFactors tenants the corresponding **API Server** and **mTLS Certificate Server** URLs for our SuccessFactors tenant are:   
-* **API Server**: https://api4.successfactors.com/                         
-* **mTLS Certificate Server**: https://api4.cert.successfactors.com
-
-## 11. SAP Cloud Identity Services tenant(s) and SuccessFactors Details
-
-To setup Joule, the SuccessFactors tenant should already be integrated to use SAP Cloud Identity Service.  To find out which IAS/IPS instance the SuccessFactors tenant is using access **Admin Center >> Monitoring Tool for Identity Authentication Service/Identity Provisioning Service Upgrade**.  Make a note of the **Identity Authentication Service Tenant URL** and **Identity Provisioning Service Tenant URL**.  When setting up the BTP subaccount trust with IAS in later steps, it will be important to select the same IAS tenant that is used by SuccessFactors.  In addition, the date of when the activatation was done will be important to pick the right domain to use when setting up BTP Subaccount trust to SAP Cloud Identity Authentication Service (IAS). <br/>
+To setup a Joule instance that works across different SAP applications, it's required that those applications are integrated with same SAP Cloud Identity Service tenant.  SAP provides a production and non-production instance of SAP Cloud Identity Services free of charge to SAP customers.  All non-prod SAP applications should be integrated with same non-prod Cloud Identity Services tenant and production ones with the production tenant.  If that's not the case in your environment then it's not possible to use a single Joule instance that works across different SAP applications.   
+To find out which IAS/IPS instance the SuccessFactors tenant is using access **Admin Center >> Monitoring Tool for Identity Authentication Service/Identity Provisioning Service Upgrade**.  Make a note of the **Identity Authentication Service Tenant URL** and **Identity Provisioning Service Tenant URL**.  When setting up the BTP subaccount trust with IAS in later steps, it will be important to select the same IAS tenant that is used by SuccessFactors.  In addition, the date of when the activatation was done will be important to pick the right domain to use when setting up BTP Subaccount trust to SAP Cloud Identity Authentication Service (IAS). <br/>
 ![prepare_activation](4.jpg)
 
-## 12. Domain used for SuccessFactors trust with SAP Cloud Identity Services
-
-In addition to knowing the URL of SAP Cloud Identity Services tenant, we also need to know which domain was used during the integration between SuccessFactors and SAP Cloud Identity Authentication Service.  Use the table below to determine which domain is relevant for your integration:
-
-| Criteria     | Domain to Use |
-| ----------- | ----------- |
-| SuccessFactors tenant already migrated to common super domain   | ias.accounts.**cloud.sap**     | 
-| **Initiate the SAP Cloud Identity Services Identity Authentication Service Integration** job triggered **after Nov 20, 2023** in Upgrade Center   | ias.accounts.**cloud.sap**     | 
-| **Initiate the SAP Cloud Identity Services Identity Authentication Service Integration** job triggered **before Nov 20, 2023** in Upgrade Center   |ias.accounts.**ondemand.com**     | 
-
-Knowing which domain to use is relevant when setting up trust between BTP Subaccount and SAP Cloud Identity Authentication Service in later steps.
-
-## 13. Validate SuccessFactors IP Restriction Management
-
-Some of our SuccessFactors customers have IP restrictions in place to prevent user access to SuccessFactors from outside of that IP range.  For more information on IP Restriction Management in SuccessFactors follow this SAP Note: [2089414 - System: How to restrict access to SuccessFactors by IP address - IP Restriction Management](https://userapps.support.sap.com/sap/support/knowledge/en/2089414).  If such IP restrictions are in place then the IPs of BTP data center where Joule will be setup must also be added to the list of whitelisted IPs. To see the list of BTP datacenters and the corresponding IPs, follow [Regions and API Endpoints Available for the Cloud Foundry Environment](https://help.sap.com/docs/btp/sap-business-technology-platform/regions-and-api-endpoints-available-for-cloud-foundry-environment)<br/>
-
-**WARNING**: DO NOT add the BTP IPs unless you are already restricting user access to SuccessFactors based in IPs.  Please read note 2089414 in detail before making any changes in the **IP Restriction Management** app in SuccessFactors.
