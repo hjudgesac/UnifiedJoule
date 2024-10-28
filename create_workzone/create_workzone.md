@@ -34,21 +34,20 @@
 
 ## Configure SAP Build Work Zone to use SAP Cloud Identity Services - Identity Authentication
 For more information on this, see [Switching to SAP Cloud Identity Services - Identity Authentication](https://help.sap.com/docs/build-work-zone-standard-edition/sap-build-work-zone-standard-edition/switching-to-sap-cloud-identity-services-identity-authentication?q=identity+authentication)
-1. From the Navigation Pane on the left, select **Security >> Users** and click the arrow to open user details.</br>
-![create_content_provider](1.jpg)
+1. From the Navigation Pane in BTP Cockpit, select **Security >> Users** and click the arrow to open user details.</br>
+![create_content_provider](13.jpg)
 
 2. Scroll down to role collections section and click **Additional Details** icon >> **Assign Role Collections**.</br> 
-![create_content_provider](2.jpg)   
+![create_content_provider](14.jpg)   
 
 3. Select the **Launchpad_Admin** and click **Assign Role Collection**.</br>
-![create_content_provider](3.jpg) 
+![create_content_provider](15.jpg) 
 
 4. From the Navigation Pane on the left, select **Instances and Subscriptions***. Click **SAP Build Work Zone, standard edition** to launch the application.</br>  
-![create_content_provider](4.jpg) 
+![create_content_provider](16.jpg) 
 
 5. If prompted to choose the authentication provider, click **Default Identity Provider**.</br>
-![create_content_provider](4-1.jpg) 
-
+![create_content_provider](17.jpg) 
 
 6.  In the BTP cockpit, navigate to your BTP Global Account.</br>
 ![create_wz](11-1.jpg)
