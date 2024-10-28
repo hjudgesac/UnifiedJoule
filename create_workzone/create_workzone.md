@@ -1,3 +1,4 @@
+## Create SAP Build Work Zone Instance and Subscription
 1. From the Navigation Pane on the left, select **Instances and Subscriptions**.  Click **Create**. </br>
 ![create_wz](1.jpg)
 
