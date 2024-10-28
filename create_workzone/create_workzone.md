@@ -32,7 +32,25 @@
 12. Open the file in a text editor to review its content.  Make note of the items in red as they will be required for further configuration.</br>
 ![create_wz](11.jpg)
 
-13.  In the BTP cockpit, navigate to your BTP Global Account.</br>
+## Configure SAP Build Work Zone to use SAP Cloud Identity Services - Identity Authentication
+For more information on this, see [Switching to SAP Cloud Identity Services - Identity Authentication](https://help.sap.com/docs/build-work-zone-standard-edition/sap-build-work-zone-standard-edition/switching-to-sap-cloud-identity-services-identity-authentication?q=identity+authentication)
+1. From the Navigation Pane on the left, select **Security >> Users** and click the arrow to open user details.</br>
+![create_content_provider](1.jpg)
+
+2. Scroll down to role collections section and click **Additional Details** icon >> **Assign Role Collections**.</br> 
+![create_content_provider](2.jpg)   
+
+3. Select the **Launchpad_Admin** and click **Assign Role Collection**.</br>
+![create_content_provider](3.jpg) 
+
+4. From the Navigation Pane on the left, select **Instances and Subscriptions***. Click **SAP Build Work Zone, standard edition** to launch the application.</br>  
+![create_content_provider](4.jpg) 
+
+5. If prompted to choose the authentication provider, click **Default Identity Provider**.</br>
+![create_content_provider](4-1.jpg) 
+
+
+6.  In the BTP cockpit, navigate to your BTP Global Account.</br>
 ![create_wz](11-1.jpg)
-14.  Under **System Landscape** and confirm that you now also see a new system of type **SAP Start** listed as a registered system.  This system is automatically added to the System Landscape from the SAP Build Work Zone subscription that you created earlier.  Make a note of the **System Name** for this system as it will come in handy later when executing the Joule booster.</br>
+15.  Under **System Landscape** and confirm that you now also see a new system of type **SAP Start** listed as a registered system.  This system is automatically added to the System Landscape from the SAP Build Work Zone subscription that you created earlier.  Make a note of the **System Name** for this system as it will come in handy later when executing the Joule booster.</br>
 ![create_wz](12.jpg)
