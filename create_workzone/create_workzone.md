@@ -47,13 +47,13 @@ For more information on this, see [Switching to SAP Cloud Identity Services - Id
 4. From the Navigation Pane on the left, select **Instances and Subscriptions***. Click **SAP Build Work Zone, standard edition** to launch the application.</br>  
 ![create_content_provider](16.jpg) 
 
-5. If prompted to choose the authentication provider, click **Default Identity Provider**.</br>
+5. Select **Default Identity Provider**.</br>
 ![create_content_provider](17.jpg)
 
-6. If prompted to choose the authentication provider, click **Default Identity Provider**.</br>
+6. Click the **Settings** icon and select **Identity Authentication** tab.  Make sure the checkbox is selected and click **Enable**.</br>
 ![create_content_provider](18.jpg)
 
-7. If prompted to choose the authentication provider, click **Default Identity Provider**.</br>
+7. Confirm the Identity Authentication is enabled successfully.</br>
 ![create_content_provider](19.jpg)
 
 8.  In the BTP cockpit, navigate to your BTP Global Account.</br>
