@@ -48,9 +48,15 @@ For more information on this, see [Switching to SAP Cloud Identity Services - Id
 ![create_content_provider](16.jpg) 
 
 5. If prompted to choose the authentication provider, click **Default Identity Provider**.</br>
-![create_content_provider](17.jpg) 
+![create_content_provider](17.jpg)
 
-6.  In the BTP cockpit, navigate to your BTP Global Account.</br>
+6. If prompted to choose the authentication provider, click **Default Identity Provider**.</br>
+![create_content_provider](18.jpg)
+
+7. If prompted to choose the authentication provider, click **Default Identity Provider**.</br>
+![create_content_provider](19.jpg)
+
+8.  In the BTP cockpit, navigate to your BTP Global Account.</br>
 ![create_wz](11-1.jpg)
 15.  Under **System Landscape** and confirm that you now also see a new system of type **SAP Start** listed as a registered system.  This system is automatically added to the System Landscape from the SAP Build Work Zone subscription that you created earlier.  Make a note of the **System Name** for this system as it will come in handy later when executing the Joule booster.</br>
 ![create_wz](12.jpg)
