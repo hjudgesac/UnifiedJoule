@@ -17,14 +17,17 @@
 6. Confirm the selected applications chosen in previous step are listed under the Capability Pacakages dropdown. Click **Next**.<br>
 ![run_booster](10.jpg)
 
-7. Leave the default **Formation Name**.  From the SAP SuccessFactors System dropdown choose the SuccessFactors system registered under the BTP System Landscape in earlier steps.  For SAP Start System, select the SAP Build Work Zone subscription that you created earlier in BTP subaccount.  Click **Next**.</br> 
+7. Leave the default **Formation Name**.  Under the Include System area choose the following and click **Next**. </br>
+  SAP Build WorkZone System: <Choose the SAP Build Work Zone created earlier>
+  SAP Cloud Identity Services System: <Choose the Cloud Identity Services Tenant>
+  Additional systems based on your specific scenario. In this example we are setting up Joule for SAP SuccessFactors and SAP S/4HANA Cloud so choose the appropriate sytem that is registered in the System Landscape for those respective solutions.
 ![run_booster](11.jpg)
 
-8. Confirm the validation check is successful and click **Next**.</br>
+10. Confirm the validation check is successful and click **Next**.</br>
   ![run_booster](12.jpg)
 
-9. Review the configuration settings and click **Finish**.</br>
+11. Review the configuration settings and click **Finish**.</br>
   ![run_booster](13.jpg)
 
-10. Confirm the booster execution is successful and click **Close**.</br>
+12. Confirm the booster execution is successful and click **Close**.</br>
 ![run_booster](7.png)
