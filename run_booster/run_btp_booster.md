@@ -10,10 +10,11 @@
 4. From the Subaccount dropdown select the **Joule** subaccount created earlier and click **Next**.</br>
 ![run_booster](4.png)
 
-5. From the Products dropdown select **SAP SuccessFactors** and choose whether the integration is for **Testing or Production**.  Click **Next**.</br>
+5. From the Products dropdown select all SAP applications which will be setup with Joule.  For example, SAP S/4HANA Cloud and SAP SuccessFactors in my setup. 
+ Choose whether the integration is for **Testing or Production** and click **Next**.</br>
 ![run_booster](9.jpg)
 
-6. Confirm the **SAP SuccessFactors** is selected from the Capability Pacakages dropdown and click **Next**.<br>
+6. Confirm the selected applications chosen in previous step are listed under the Capability Pacakages dropdown. Click **Next**.<br>
 ![run_booster](10.jpg)
 
 7. Leave the default **Formation Name**.  From the SAP SuccessFactors System dropdown choose the SuccessFactors system registered under the BTP System Landscape in earlier steps.  For SAP Start System, select the SAP Build Work Zone subscription that you created earlier in BTP subaccount.  Click **Next**.</br> 
