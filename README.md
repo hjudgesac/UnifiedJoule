@@ -5,6 +5,7 @@ Prepare for Activation
 Register System
 Create Subaccount
 Create Trust
+Validate IAS application settings
 Create WorkZone
 Run Booster
 Post Booster Validation
