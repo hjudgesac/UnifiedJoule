@@ -37,7 +37,7 @@ Activation of Joule requires configuration in multiple systems.  It's important 
 
 ## 4. Choose Data Center for Joule Setup
 
-Joule is BTP Service that works with multiple SAP solutions.  The number of SAP applications supported with Joule is growning on a regular basis so it's important to choose a data center for Joule setup that can work for various SAP applications that you may have in your landscape.  There are several factors that determine which data center to choose for Joule setup.  Some factors to consider:
+Joule is BTP Service that works with multiple SAP solutions.  The number of SAP applications supported with Joule is growing on a regular basis so it's important to choose a data center for Joule setup that can work for various SAP applications that you may have in your landscape - even if those applications are not in scope for Joule setup now.  There are several factors that determine which data center to choose for Joule setup.  Some factors to consider:
 
 1)  What are the currently supported datacenters for Joule?
 2)  Which SAP solutions will Joule be setup for and what are datacenters of those solutions?
