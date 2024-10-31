@@ -63,8 +63,10 @@ To setup a Joule instance that works across different SAP applications the follo
 2) The trust setup between IAS and the SAP applications should be using the same domain.
 3) If using a Corporate Identity Provider, the Conditional Authentication settings for the applications must be setup the same way.
 
-SAP provides a production and non-production instance of SAP Cloud Identity Services free of charge to SAP customers.  All non-prod SAP applications should be integrated with same non-prod Cloud Identity Services tenant and production ones with the production tenant.  
+SAP provides a production and non-production instance of SAP Cloud Identity Services free of charge to SAP customers.  All non-prod SAP applications should be integrated with same non-prod Cloud Identity Services tenant and production ones with the production tenant.
+
 SAP Applications for which Joule is being setup for must be integrated with SAP Cloud Identity Services using the same domain.  SAP Cloud Identity Services can use ondemand.com or cloud.sap domain hence it's important that apps that will use the same Joule instance have consistency on domain used to integrate with SAP Cloud Identity Services.  If that's not the case in your environment, then it's not possible to use a single Joule instance that works across different SAP applications.
+
 Furthermore, if your SAP Cloud Identity Authentication is setup to use a Corporate Identity Provider, all of your apps must be configured to use the same Corporate Identity Provider.  For example, if you are planning to run the booster for SAP SuccessFactors and SAP S/4HANA Cloud, the conditional authenticaton settings for both of these apps in SAP Cloud Identity Authenticaton Service should be setup the same way.  If that's not the case in your environment, then it's not possible to use a single Joule instance that works across different SAP applications.
 
 
