@@ -28,4 +28,8 @@
 ![register_system](8.png)
 
 12. Confirm the Status is **Enabled**.
-![register_system](9.png)   
+![register_system](9.png)
+
+13. Confirm the status is updated to **Registered** in the BTP Cockpit.</br>                                                                                                                   
+![register_system](10.jpg)
+**Note**: You may have to refresh the BTP Cockpit browser session to see the updated status.
