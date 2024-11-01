@@ -1,3 +1,5 @@
+**NOTE**: Only execute these steps if you don't already have your SuccessFactors system registered under the BTP System Landscape.
+
 1. Access [BTP Cockpit URL](https://cockpit.btp.cloud.sap).
 2. Select the BTP Global Account that has the Joule entitlements and click **Continue**.</br>                       
 ![run_booster](1.png)
