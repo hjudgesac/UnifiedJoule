@@ -1,4 +1,4 @@
-TEst Before you can activate Joule there are certain number of pre-requisites that must be met.  This section describes those pre-requisites and outlines some details that need to be captured prior to running through the activation steps.
+Before you can activate Joule there are certain number of pre-requisites that must be met.  This section describes those pre-requisites and outlines some details that need to be captured prior to running through the activation steps.
 
 ## 1. User Personas Required for Joule activation
 
@@ -58,9 +58,9 @@ Let's take a look at a hypthetical scenario shown in the picture below.  In this
 
 ## 5. Confirm same authentication setup used across SAP applications
 
-To setup a Joule instance that works across different SAP applications the following 3 conditions must be met:
-  1) Applications must be integrated with same SAP Cloud Identity Service tenant. 
-  2) The trust setup between IAS and the SAP applications should be using the same domain.
+To setup a Joule instance that works across different SAP applications the following 3 conditions must be met:</br>
+  1) Applications must be integrated with same SAP Cloud Identity Service tenant.</br>
+  2) The trust setup between IAS and the SAP applications should be using the same domain.</br>
   3) If using a Corporate Identity Provider, the Conditional Authentication settings for the applications must be setup the same way.
 
 SAP provides a production and non-production instance of SAP Cloud Identity Services free of charge to SAP customers.  All non-prod SAP applications should be integrated with same non-prod Cloud Identity Services tenant and production ones with the production tenant.
