@@ -3,7 +3,7 @@
 ![run_booster](1.png)
 
 3. From the Navigation Pane on the left, select **System Landscape**.</br> 
-![register_system](2.jpg)
+![register_system](1.png)
 
 4. Click **Add System**.</br>                              
 5. Specify a **System Name** of your choice and select **SAP SuccessFactors** from the **System Type** dropdown.</br>  
