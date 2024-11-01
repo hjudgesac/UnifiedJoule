@@ -1,3 +1,5 @@
+**NOTE**: Only execute the steps below if you don't have your S/4HANA Cloud System registered already.  In most customer situation S/4 system should already be registered under the BTP System Landscape.
+
 1. Access [BTP Cockpit URL](https://cockpit.btp.cloud.sap).
 2. Select the BTP Global Account that has the Joule entitlements and click **Continue**.</br>                       
 ![run_booster](1.png)
