@@ -53,7 +53,12 @@
 1. From the Navigation Pane, select **Settings** and click **Add**.</br>
 ![run_booster](14.jpg)
 
-2. Add your **SuccessFactors tenant domain** and click **Add**.  For example, https:///hcm-us10.hr.cloud.sap.                  
+2. Add your **SuccessFactors tenant URL** and click **Add**.  For example, https://hcm-us10.hr.cloud.sap.                  
 **NOTE**:  Do not add trailing slash(/) at the end of the URL.</br>    
 ![run_booster](15.jpg)
+
+3.  Click the **Add** button again to add additional application(eg. S/4AHANA Public Cloud) URLs for which Joule will be configured.
+![run_booster](16.jpg)
+
+5. Similarly add URL for other applications which will be setup for Joule
  
