@@ -1,35 +1,39 @@
 ## Check Formations in BTP Global Account
 1. If necessary, navigate to your BTP Global Account.
 
-2. Select **SAP Build Work Zone, standard edition** from Service dropdown and **Subscriptions >> foundation** from the Plan dropdown. Click **Create**.</br> 
-![create_wzr](1.jpg)   
+2. Under **System Landscape** click **Formations** and ensure the formation is created successfully.  The formations should have all the system that were selected during the booster execution.</br> 
+![create_wzr](1.jpg)
 
-3. Under **Instances and Subscriptions** click **Create** button again. 
-4. Select **SAP Build Work Zone, standard edition** from Service dropdown and **instances >> foundation** from the Plan dropdown.</br>
+## Check Destinations in BTP Subaccount
+
+
+
+4. Under **Instances and Subscriptions** click **Create** button again. 
+5. Select **SAP Build Work Zone, standard edition** from Service dropdown and **instances >> foundation** from the Plan dropdown.</br>
 ![create_wz](3.jpg)  
 
-5. Specify an **Instance Name** and click **Create**.</br>         
+6. Specify an **Instance Name** and click **Create**.</br>         
 ![run_booster](4.jpg)
 
-6. Confirm the subscription to the Work Zone and creation of the instance is successful.</br>                                                        
+7. Confirm the subscription to the Work Zone and creation of the instance is successful.</br>                                                        
 ![create_wz](5.jpg)
 
-7. Click the **navigation arrow** to view the Work Zone instace details.</br>                                     
+8. Click the **navigation arrow** to view the Work Zone instace details.</br>                                     
 ![create_wzr](6-1.jpg)
 
-8. Under **Service Keys** click **Create**.</br>                                                       
+9. Under **Service Keys** click **Create**.</br>                                                       
 ![create_wz](7.jpg)
 
-9. Specify a **Service Key Name** and click **Create**.</br>                  
+10. Specify a **Service Key Name** and click **Create**.</br>                  
 ![create_wz](8.jpg)
 
-10. Click **Actions** icon next to the key and click **Download**.</br>
+11. Click **Actions** icon next to the key and click **Download**.</br>
 ![create_wz](9.jpg)
 
-11. Confirm the **key.txt** file is successfully downloaded into your downloads folder.</br>
+12. Confirm the **key.txt** file is successfully downloaded into your downloads folder.</br>
 ![create_wz](10.jpg)
 
-12. Open the file in a text editor to review its content.  Make note of the items in red as they will be required for further configuration.</br>
+13. Open the file in a text editor to review its content.  Make note of the items in red as they will be required for further configuration.</br>
 ![create_wz](11.jpg)
 
 ## Configure SAP Build Work Zone to use SAP Cloud Identity Services - Identity Authentication
