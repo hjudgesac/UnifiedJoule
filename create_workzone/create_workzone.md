@@ -58,5 +58,5 @@ For more information on this, see [Switching to SAP Cloud Identity Services - Id
 
 8.  In the BTP cockpit, navigate to your BTP Global Account.</br>
 ![create_wz](11-1.jpg)
-15.  Under **System Landscape** and confirm that you now also see a new system of type **SAP Start** listed as a registered system.  This system is automatically added to the System Landscape from the SAP Build Work Zone subscription that you created earlier.  Make a note of the **System Name** for this system as it will come in handy later when executing the Joule booster.</br>
-![create_wz](12.jpg)
+15.  Under **System Landscape** and confirm that you now also see a new system of type **SAP Build Work Zone** listed as a registered system.  This system is automatically added to the System Landscape from the SAP Build Work Zone subscription that you created earlier.  Make a note of the **System Name** for this system as it will come in handy later when executing the Joule booster.</br>
+![create_wz](20.jpg)
