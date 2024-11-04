@@ -71,4 +71,12 @@ SAP Applications for which Joule is being setup for must be integrated with SAP 
 Furthermore, if your SAP Cloud Identity Authentication is setup to use a Corporate Identity Provider, all of your apps must be configured to use the same Corporate Identity Provider.  For example, if you are planning to run the booster for SAP SuccessFactors and SAP S/4HANA Cloud, the conditional authenticaton settings for both of these apps in SAP Cloud Identity Authenticaton Service should be setup the same way.  If that's not the case in your environment, then it's not possible to use a single Joule instance that works across different SAP applications.  The screenshot below depicts a scenario where SuccessFactors is configured to use MS Entra ID while S/4HANA Cloud is setup to use OKTA.  In this scenario, the applicaitions conditional auth settings do not match, hence unified Joule instance can't be used.</br>
 ![Preparation](8.jpg)
 
+## 5. Validate Identity Federation Settings in SAP Cloud Identity Services
+
+In order for Joule to work, it requires certain attributes from the user profile in SAP Cloud Identity Services.  Specifically the Global User ID field is used by the Joule application.  To ensure this attribute is read from SAP Cloud Identity Services user profile, the Identity Federation Settings may have to be enabled in your system.  This setting is relevant:
+  * if you have a Corporate Identity Provider configured in SAP Cloud Identity Services
+  * and your application is configured to delegate the authentication request to that corporate IDP
+To enable this settings, ensure **Use Identity Authentication user store** toggle is enabled under the Identity Federation Settings of your Corporate Identity Provider setup in SAP Cloud Identity Services.</br>
+![Preparation](9.jpg)
+
 
