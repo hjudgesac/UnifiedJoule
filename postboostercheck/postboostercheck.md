@@ -4,11 +4,12 @@
 2. Under **System Landscape** click **Formations** and ensure the formation is created successfully.  The formations should have all the system that were selected during the booster execution.</br> 
 ![postbooster](1.jpg)
 
-## Check Destinations in BTP Subaccount
-
+## Check Joule Application Subscription and Destinatios setup
 1. Click **Account Explorer** and select the Subaccount used for Joule setup.</br>
- ![postbooster](3.jpg) 
-2. Click **Connectivity -> Destinations** and confirm the destinations are successfully created.  The destinations shown will vary based on the systems selected during the booster execution.  See screenshot below for relevant destinations if the booster was executed for S/4HANA Public Cloud and SuccessFactors.</br>
+ ![postbooster](3.jpg)
+2. Click **Services -> Instances and Subscriptions** and Joule application is subscribed successfully.</br>
+  ![postbooster](4.jpg)
+3. Click **Connectivity -> Destinations** and confirm the destinations are successfully created.  The destinations shown will vary based on the systems selected during the booster execution.  See screenshot below for relevant destinations if the booster was executed for S/4HANA Public Cloud and SuccessFactors.</br>
 ![create_wz](2.jpg)  
 
 6. Specify an **Instance Name** and click **Create**.</br>         
