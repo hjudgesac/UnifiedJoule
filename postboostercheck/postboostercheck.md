@@ -2,7 +2,7 @@
 1. If necessary, navigate to your BTP Global Account.
 
 2. Select **SAP Build Work Zone, standard edition** from Service dropdown and **Subscriptions >> foundation** from the Plan dropdown. Click **Create**.</br> 
-![create_wzr](2.jpg)   
+![create_wzr](1.jpg)   
 
 3. Under **Instances and Subscriptions** click **Create** button again. 
 4. Select **SAP Build Work Zone, standard edition** from Service dropdown and **instances >> foundation** from the Plan dropdown.</br>
