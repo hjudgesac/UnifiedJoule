@@ -6,10 +6,10 @@
 
 ## Check Destinations in BTP Subaccount
 
-1. Click **Account Explored** and select the Subaccount used for Joule setup.
+1. Click **Account Explorer** and select the Subaccount used for Joule setup.</br>
  ![postbooster](3.jpg) 
-5. Select **SAP Build Work Zone, standard edition** from Service dropdown and **instances >> foundation** from the Plan dropdown.</br>
-![create_wz](3.jpg)  
+2. Click **Connectivity -> Destiantions** and confirm the destinations are successfully created.  The destinations shown will vary based on the systems selected during the booster execution.  In our example we ran the booster for S/4HANA Cloud and SuccessFactors so we see the relevant destinations for those systems.</br>
+![create_wz](2.jpg)  
 
 6. Specify an **Instance Name** and click **Create**.</br>         
 ![run_booster](4.jpg)
