@@ -76,7 +76,8 @@ Furthermore, if your SAP Cloud Identity Authentication is setup to use a Corpora
 In order for Joule to work, it requires certain attributes from the user profile in SAP Cloud Identity Services.  Specifically the Global User ID field is used by the Joule application.  To ensure this attribute is read from SAP Cloud Identity Services user profile, the Identity Federation Settings may have to be enabled in your system.  This setting is relevant:
   * if you have a Corporate Identity Provider configured in SAP Cloud Identity Services
   * and your application is configured to delegate the authentication request to that corporate IDP
-To enable this settings, ensure **Use Identity Authentication user store** toggle is enabled under the Identity Federation Settings of your Corporate Identity Provider setup in SAP Cloud Identity Services.</br>
+
+To enable this settings, ensure **Use Identity Authentication user store** toggle is enabled under the Identity Federation Settings of your Corporate Identity Provider setup in SAP Cloud Identity Services.  For more information on this setting, refer to [Configure Identity Federation](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/corp-idp-configure-identity-federation?version=Cloud&q=identity+Federation)</br>
 ![Preparation](9.jpg)
 
 
