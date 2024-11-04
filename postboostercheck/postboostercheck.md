@@ -2,13 +2,12 @@
 1. If necessary, navigate to your BTP Global Account.
 
 2. Under **System Landscape** click **Formations** and ensure the formation is created successfully.  The formations should have all the system that were selected during the booster execution.</br> 
-![create_wzr](1.jpg)
+![postbooster](1.jpg)
 
 ## Check Destinations in BTP Subaccount
 
-
-
-4. Under **Instances and Subscriptions** click **Create** button again. 
+1. Click **Account Explored** and select the Subaccount used for Joule setup.
+ ![postbooster](3.jpg) 
 5. Select **SAP Build Work Zone, standard edition** from Service dropdown and **instances >> foundation** from the Plan dropdown.</br>
 ![create_wz](3.jpg)  
 
