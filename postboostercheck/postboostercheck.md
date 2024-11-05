@@ -23,17 +23,17 @@
 3. From the menu, access **Applications & Resource >> Applications**.</br>
 ![update_ias](8.jpg)
 
-4. Validate that 
-4. Select your SuccessFactors application and click on **Conditional Authentication**.</br>
+4. Validate that both **das-ias** and **Document Grounding** applications are created in SAP Cloud Identity Services.  These are automatically created by the Joule booster.
+![update_ias](5-1.jpg)
+4. Select one of your application for which Joule is being setup for.  For eg. SuccessFactors and click on **Conditional Authentication**.</br>
 ![update_ias](9.jpg)
-
 5. Validate the **Conditional Authentication** settings for the application, but do not change anything in the existing setup.  The settings here would fall into one of the following 3 scenarios:
  * Scenario 1: SuccessFactors application is setup to use Identity Authentication as the Default Identity Provider
- * Scenario 2: SuccessFactors application is setup to use Identity Authentication as the Default Identity Provider but there are conditional rules setup to delegate   authentication to a 3rd party corporate IDP
+ * Scenario 2: SuccessFactors application is setup to use Identity Authentication as the Default Identity Provider but there are conditional rules setup to delegate authentication to a 3rd party corporate IDP
  * Scenario 3: 3rd party IDP is setup as the Default Identity Provider eg. OKTA in my screenshot below.</br>
 ![update_ias](9-1.jpg)
 
-6. Switch to the application created for Joule by the BTP booster that was executed earlier.  The application name should be with the format **das-ias (Name of your subaccount)**. Set the **Conditional Authentication** settings for this application to match exactly what was set for the SuccessFactors application.  For eg. if the SuccessFactors application is setup with Scenario 3, you must also change Default Identifier in this application accordingly.</br>               
+6. Switch to **das-ias (Name of your subaccount)** application that is created by the booster. Set the **Conditional Authentication** settings for this application to match exactly what was set for the SuccessFactors application.  For eg. if the SuccessFactors application is setup with Scenario 3, you must also change Default Identifier in this application accordingly.</br>               
 ![create_trust](image.png)
 
 ## **Update Trusted Domains settings**
