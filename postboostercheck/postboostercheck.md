@@ -12,9 +12,8 @@
    ![postbooster](4-1.jpg)
 4. Confirm the Joule application is running and make a note of the URL of the application.  This URL is required later to complete Joule setup for certain SAP 
    applications like S/4HANA Cloud.
-   ![postbooster](421.jpg)
-  
-6. Click **Connectivity -> Destinations** and confirm the destinations are successfully created.  The destinations shown will vary based on the systems selected during the booster execution.  See screenshot below for relevant destinations if the booster was executed for S/4HANA Public Cloud and SuccessFactors.</br>
+   ![postbooster](4-2.jpg) 
+5. Click **Connectivity -> Destinations** and confirm the destinations are successfully created.  The destinations shown will vary based on the systems selected during the booster execution.  See screenshot below for relevant destinations if the booster was executed for S/4HANA Public Cloud and SuccessFactors.</br>
 ![create_wz](2.jpg)  
 
 ## Create NavigationService Destination
