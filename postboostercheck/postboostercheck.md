@@ -55,7 +55,7 @@
  * Scenario 3: 3rd party IDP is setup as the Default Identity Provider eg. OKTA in my screenshot below.</br>
 ![update_ias](9-1.jpg)
 
-6. Switch to **das-ias (Name of your subaccount)** application(s) that is created by the booster. Set the **Conditional Authentication** settings for this application to match exactly what was set for the application for which Joule is being configured.  For eg. if the SuccessFactors application is setup with Scenario 3, you must also change Default Identity Provider in this application accordingly.</br>
+6. Switch to **das-ias (Name of your subaccount)** application that is created by the booster. Set the **Conditional Authentication** settings for this application to match exactly what was set for the application for which Joule is being configured.  For eg. if the SuccessFactors application is setup with Scenario 3, you must also change Default Identity Provider in this application accordingly.</br>
 **NOTE:** As mentioned in the preparations steps, if the same Joule instance is to be shared across multiple applications (eg SuccessFactors and S/4), then those applications must have the same conditional authentication settings.
 ![create_trust](image.png)
 
