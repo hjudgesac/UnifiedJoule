@@ -1,6 +1,6 @@
 ## Check Formations in BTP Global Account
 1. If necessary, navigate to your BTP Global Account.
-2. Under **System Landscape** click **Formations** and ensure the formation is created successfully.  The formations should have all the system that were selected during the booster execution.</br> 
+2. Under **System Landscape** click **Formations** and ensure the formation is created successfully.  The formations should have all the systems that were selected during the booster execution.</br> 
 ![postbooster](1.jpg)
 
 ## Check Joule Subscription and Destinations setup in BTP Subaccount
