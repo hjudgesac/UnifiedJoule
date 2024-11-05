@@ -1,6 +1,5 @@
 ## Check Formations in BTP Global Account
 1. If necessary, navigate to your BTP Global Account.
-
 2. Under **System Landscape** click **Formations** and ensure the formation is created successfully.  The formations should have all the system that were selected during the booster execution.</br> 
 ![postbooster](1.jpg)
 
@@ -12,31 +11,41 @@
 3. Click **Connectivity -> Destinations** and confirm the destinations are successfully created.  The destinations shown will vary based on the systems selected during the booster execution.  See screenshot below for relevant destinations if the booster was executed for S/4HANA Public Cloud and SuccessFactors.</br>
 ![create_wz](2.jpg)  
 
+## **Update application configuration in SAP Cloud Identity Authentication Service**
+1. Access the administration console of SAP Cloud Identity Services tenant using one of the URL formats below:
+  * https://your-ias-tenant.accounts.ondemand.com/admin
+  * https://your-ias-tenant.accounts.cloud.sap/admin              
+**Note**: Substitute your-ias-tenant with your actual tenant's name.
 
-## Configure SAP Build Work Zone to use SAP Cloud Identity Services - Identity Authentication
-For more information on this, see [Switching to SAP Cloud Identity Services - Identity Authentication](https://help.sap.com/docs/build-work-zone-standard-edition/sap-build-work-zone-standard-edition/switching-to-sap-cloud-identity-services-identity-authentication?q=identity+authentication)
-1. From the Navigation Pane in BTP Cockpit, select **Security >> Users** and click the arrow to open user details.</br>
-![create_content_provider](13.jpg)
+2. Authenticate using an administrator user.</br>              
+![update_ias](7.jpg)
 
-2. Scroll down to role collections section and click **Additional Details** icon >> **Assign Role Collections**.</br> 
-![create_content_provider](14.jpg)   
+3. From the menu, access **Applications & Resource >> Applications**.</br>
+![update_ias](8.jpg)
 
-3. Select the **Launchpad_Admin** and click **Assign Role Collection**.</br>
-![create_content_provider](15.jpg) 
+4. Validate that 
+4. Select your SuccessFactors application and click on **Conditional Authentication**.</br>
+![update_ias](9.jpg)
 
-4. From the Navigation Pane on the left, select **Instances and Subscriptions***. Click **SAP Build Work Zone, standard edition** to launch the application.</br>  
-![create_content_provider](16.jpg) 
+5. Validate the **Conditional Authentication** settings for the application, but do not change anything in the existing setup.  The settings here would fall into one of the following 3 scenarios:
+ * Scenario 1: SuccessFactors application is setup to use Identity Authentication as the Default Identity Provider
+ * Scenario 2: SuccessFactors application is setup to use Identity Authentication as the Default Identity Provider but there are conditional rules setup to delegate   authentication to a 3rd party corporate IDP
+ * Scenario 3: 3rd party IDP is setup as the Default Identity Provider eg. OKTA in my screenshot below.</br>
+![update_ias](9-1.jpg)
 
-5. Select **Default Identity Provider**.</br>
-![create_content_provider](17.jpg)
+6. Switch to the application created for Joule by the BTP booster that was executed earlier.  The application name should be with the format **das-ias (Name of your subaccount)**. Set the **Conditional Authentication** settings for this application to match exactly what was set for the SuccessFactors application.  For eg. if the SuccessFactors application is setup with Scenario 3, you must also change Default Identifier in this application accordingly.</br>               
+![create_trust](image.png)
 
-6. Click the **Settings** icon and select **Identity Authentication** tab.  Make sure the checkbox is selected and click **Enable**.</br>
-![create_content_provider](18.jpg)
+## **Update Trusted Domains settings**
 
-7. Confirm the Identity Authentication is enabled successfully.</br>
-![create_content_provider](19.jpg)
 
-8.  In the BTP cockpit, navigate to your BTP Global Account.</br>
-![create_wz](11-1.jpg)
-15.  Under **System Landscape** and confirm that you now also see a new system of type **SAP Build Work Zone** listed as a registered system.  This system is automatically added to the System Landscape from the SAP Build Work Zone subscription that you created earlier.  Make a note of the **System Name** for this system as it will come in handy later when executing the Joule booster.</br>
-![create_wz](20.jpg)
+1. From the menu, access **Applications & Resource >> Tenant Settings**.</br>
+![update_ias](11-1.jpg)
+
+2. Click **Customization** >> **Trusted Domains**.</br>
+![update_ias](12.jpg)
+
+3. If necessary, click **Add** to add the domain of your SuccessFactors tenant and click **Save**.  For eg. if your SuccessFactors tenants URL is <--https://hcm-us10.hr.cloud.sap/login?company=yourcompany --> the entry to add is ***.hr.cloud.sap**.</br>        
+![update_ias](13.jpg)
+
+
