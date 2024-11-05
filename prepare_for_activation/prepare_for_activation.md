@@ -29,10 +29,11 @@ Activation of Joule requires configuration in multiple systems.  It's important 
     | SAP Build Work Zone, standard edition      | build-workzone-standard      | foundation or standard      |     1            |          limited       |
   
      ![Preparation](3.jpg)  
-  If the entitlements are not visible, it could be due to one of these reasons:
-    1) You don't have licenses for Joule.
-    2) Joule entilements were added to different BTP Global Account to which you don't have Global Account Admin access.
-    3) The start date for the Joule contract is at future date hence the entilements won't be visible in BTP until that date.
+
+If the entitlements are not visible, it could be due to one of these reasons:
+  1) You don't have licenses for Joule.
+  2) Joule entilements were added to different BTP Global Account to which you don't have Global Account Admin access.
+  3) The start date for the Joule contract is at future date hence the entilements won't be visible in BTP until that date.
 
   In the scenarios above, please work with Account Executive, BTP Customer Success Partner or SuccessFactors Customer Success Partner to resolve the entitlements issue prior to proceeding further with this mission.
 
@@ -84,8 +85,8 @@ To enable this settings, ensure **Use Identity Authentication user store** toggl
 
 To setup Joule for SAP applications, it's important that those applications are registered under BTP **System Landscape**.  It's possible that the applications are already registered automatically or as part of another project.  If that's not the case, you may have to register the applications using the subsequent steps mentioned in this mission.  For the purpose of this mission we are using SAP SuccessFactors and SAP S/4HANA Cloud and those systems are registered already in my BTP system landscape.  Few things to note:
   * Register a new system only if it's not already there.
-  * System Type of **SAP Cloud Identity Services** should already be listed by default.  Ensure that the SAP Cloud Identity Services tenant that is used by 
-    application for which Joule is being setup is listed under the System Landscape.
+  * System Type of **SAP Cloud Identity Services** should already be listed by default.  Ensure that the SAP Cloud Identity Services tenant for the applications 
+    that are in scope for Joule setup is listed.
   * Not all systems have to registered up front.  For example, if you are only going to run the booster for S/4HANA Cloud, there is no need to ensure that 
     SuccessFactors is also registerd under the System Landscape.</br>
 ![Preparation](10.jpg)
