@@ -12,7 +12,7 @@
 ![create_wz](2.jpg)  
 
 ## Create NavigationService Destination
-1. Click **Create Destination**.
+1. Click **Create Destination**.</br>
 ![create_destination](14.jpg)
 
 2. Specify the information below to create the destination and click **Save**:
