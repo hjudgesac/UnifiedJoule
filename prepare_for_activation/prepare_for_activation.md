@@ -36,7 +36,7 @@ Activation of Joule requires configuration in multiple systems.  It's important 
 
   In the scenarios above, please work with Account Executive, BTP Customer Success Partner or SuccessFactors Customer Success Partner to resolve the entitlements issue prior to proceeding further with this mission.
 
-## 4. Choose Data Center for Joule Setup
+## 3. Choose Data Center for Joule Setup
 
 Joule is BTP Service that works with multiple SAP solutions.  The number of SAP applications supported with Joule is growing on a regular basis so it's important to choose a data center for Joule setup that can work for various SAP applications that you may have in your landscape - even if those applications are not in scope for Joule setup now.  There are several factors that determine which data center to choose for Joule setup.  Some factors to consider:
 
@@ -57,7 +57,7 @@ PLM Placholder
 Let's take a look at a hypthetical scenario shown in the picture below.  In this scenario, majority of the applications are in North American datacenters so it makes sense to choose one of the North American data centers for Joule setup.  The choice between US EAST (VA), US (Virginia), or US Central (IA) is entirely up to you based on your hyperscaler preference.</br>
  ![Preparation](5.jpg)
 
-## 5. Confirm same authentication setup used across SAP applications
+## 4. Confirm same authentication setup used across SAP applications
 
 To setup a Joule instance that works across different SAP applications the following 3 conditions must be met:
    1) Applications must be integrated with same SAP Cloud Identity Service tenant.
@@ -80,4 +80,12 @@ In order for Joule to work, it requires certain attributes from the user profile
 To enable this settings, ensure **Use Identity Authentication user store** toggle is enabled under the Identity Federation Settings of your Corporate Identity Provider setup in SAP Cloud Identity Services.  For more information on this setting, refer to [Configure Identity Federation](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/corp-idp-configure-identity-federation?version=Cloud&q=identity+Federation)</br>
 ![Preparation](9.jpg)
 
+## 6. Register Systems in SAP BTP
 
+To setup Joule for SAP applications, it's important that those applications are registered under BTP **System Landscape**.  It's possible that the applications are already registered automatically or as part of another project.  If that's not the case, you may have to register the applications using the subsequent steps mentioned in this mission.  For the purpose of this mission we are using SAP SuccessFactors and SAP S/4HANA Cloud and those systems are registered already in my BTP system landscape.  Few things to note:
+  * Register a new system only if it's not already there.
+  * System Type of **SAP Cloud Identity Services** should already be listed by default.  Ensure that the SAP Cloud Identity Services tenant that is used by 
+    application for which Joule is being setup is listed under the System Landscape.
+  * Not all systems have to registered up front.  For example, if you are only going to run the booster for S/4HANA Cloud, there is no need to ensure that 
+    SuccessFactors is also registerd under the System Landscape.</br>
+![Preparation](10.jpg)
