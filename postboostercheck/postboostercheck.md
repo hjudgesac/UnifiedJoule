@@ -13,7 +13,7 @@
 
 ## Create NavigationService Destination
 1. Click **Create Destination**.
-![create_destination](1.jpg)
+![create_destination](14.jpg)
 
 2. Specify the information below to create the destination and click **Save**:
   * Name: **NavigationService**
@@ -26,7 +26,7 @@
   * Client ID: <--**clientid** from key file downloaded earlier-->
   * Client Secret: <--**clientsecret** from key file downloaded earlier-->
   * Use default JDK truststore: **checked**</br>
-![create_destination](2.jpg)
+![create_destination](15.jpg)
 
 ## **Update application configuration in SAP Cloud Identity Authentication Service**
 1. Access the administration console of SAP Cloud Identity Services tenant using one of the URL formats below:
