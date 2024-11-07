@@ -6,8 +6,11 @@ Joule offers conversational interactions between humans and computers to simplif
 
 Joule is a BTP service that can be hosted in multiple environments and data centers:  Refer to [Data Centers Supported for Joule](https://help.sap.com/docs/joule/serviceguide/data-centers-supported-by-joule).
 
+Additional Resources:</br>
+[Joule Help Guide](https://help.sap.com/docs/joule)</br>
+[Joule and additional AI Innovations from SAP](https://www.sap.com/canada/products/artificial-intelligence/ai-assistant.html)
 
-The setup process for Joule with SuccessFactors requires integration across multiple SAP components as depicted in the picture below.<br/>
+The setup process for Joule with applications like SAP S/4HANA Cloud Public Edition, SAP SuccessFactors.  Support for additional systems is being added on a regular basis so make sure to check the links above for support for latest solutions.<br/>
 ![run_booster](SolutionDiagram.jpg)
 
 This purpose of this guide is to provide step by step instructions on how to set up Joule with SAP SuccessFactors.
