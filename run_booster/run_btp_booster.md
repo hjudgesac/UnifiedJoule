@@ -10,7 +10,7 @@
 4. From the Subaccount dropdown select the **Joule** subaccount created earlier and click **Next**.</br>
 ![run_booster](4.png)
 
-5. From the Products dropdown select all SAP applications which will be setup with Joule.  For example, SAP S/4HANA Cloud and SAP SuccessFactors in my setup. 
+5. From the Products dropdown select all SAP applications which will be setup with Joule.  For example, SAP S/4HANA Cloud Public Edition and SAP SuccessFactors in my setup. 
  Choose whether the integration is for **Testing or Production** and click **Next**.</br>
 ![run_booster](9.jpg)
 
@@ -20,7 +20,7 @@
 7. Leave the default **Formation Name**.  Under the Include System area choose the following and click **Next**. </br>
   SAP Build WorkZone System: <Choose the SAP Build Work Zone created earlier>
   SAP Cloud Identity Services System: <Choose the Cloud Identity Services Tenant>
-  Additional systems based on your specific scenario. In this example we are setting up Joule for SAP SuccessFactors and SAP S/4HANA Cloud so choose the appropriate sytem that is registered in the System Landscape for those respective solutions.
+  Additional systems based on your specific scenario. In this example we are setting up Joule for SAP SuccessFactors and SAP S/4HANA Cloud Public Edition so choose the appropriate sytem that is registered in the System Landscape for those respective solutions.
 ![run_booster](11.jpg)
 
 10. Confirm the validation check is successful and click **Next**.</br>
