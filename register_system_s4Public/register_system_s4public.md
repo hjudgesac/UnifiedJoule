@@ -1,4 +1,4 @@
-**NOTE**: Only execute the steps below if you don't have your S/4HANA Cloud System registered already.  In most customer situations the S/4 system should already be registered under the BTP System Landscape.
+**NOTE**: Only execute the steps below if you don't have your S/4HANA Cloud Public Edition System registered already.  In most customer situations the system should already be registered under the BTP System Landscape.
 
 1. Access [BTP Cockpit URL](https://cockpit.btp.cloud.sap).
 2. Select the BTP Global Account that has the Joule entitlements and click **Continue**.</br>                       
@@ -14,10 +14,10 @@
 6. Select **All Communication Scenarios** from the dropdwon and click **Get Token**.</br>        
 ![register_system](3-0.png)
 
-7. Copy the **Registration Token** value and share it with your S/4HANA Public Cloud Admin.  Close the token registration screen.</br>                                                         
+7. Copy the **Registration Token** value and share it with your S/4HANA Cloud Public Edition Admin.  Close the token registration screen.</br>                                                         
 ![register_system](4.png)
 
-8. Log into SAP S/4HANA Cloud system as an admin user and search for **Maintain Extensions on SAP BTP** application.</br>                                                                                                        
+8. Log into S/4HANA Cloud Public Edition system as an admin user and search for **Maintain Extensions on SAP BTP** application.</br>                                                                                                        
 ![register_system](5.png)
 
 9. Click **New**.</br>                                      
