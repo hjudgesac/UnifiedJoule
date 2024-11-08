@@ -10,7 +10,7 @@
 
 4. Specify **Display Name** and **Region** and click **Create**.</br>                              
 ![run_booster](3-1.jpg)   
-**Note**: The **Region** must be from one of the supported data centers for Joule and correspond to your SuccessFactors tenant.  See [Data Center Mapping between SAP SuccessFactors and Joule](https://help.sap.com/docs/joule/serviceguide/data-center-mapping-between-sap-successfactors-and-joule)
+**Note**: The **Region** must be from one of the supported data centers for Joule.  See [Data Centers Supported by Joule](https://help.sap.com/docs/joule/serviceguide/data-centers-supported-by-joule)
 
 5. Click **Enable Cloud Foundry**.</br>  
 ![run_booster](4.jpg)
@@ -57,8 +57,8 @@
 **NOTE**:  Do not add trailing slash(/) at the end of the URL.</br>    
 ![run_booster](15.jpg)
 
-3.  Click the **Add** button again to add additional application(eg. S/4AHANA Public Cloud) URLs for which Joule will be configured.
+3.  Click the **Add** button again to add additional application(eg. S/4AHANA Cloud Public Edition) URLs for which Joule will be configured.
 ![run_booster](16.jpg)
 
-5. Similarly add URL for other applications which will be setup for Joule
+5. Similarly add URLs for other applications which will be setup for Joule.
  
