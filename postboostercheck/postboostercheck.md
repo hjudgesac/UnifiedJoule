@@ -11,9 +11,9 @@
 3. Click on the **Joule** application, specify credentials of user in SAP Cloud Identity Services and click **Continue**.</br>
    ![postbooster](4-1.jpg)
 4. Confirm the Joule application is running and make a note of the URL of the application.  This URL is required later to complete Joule setup for certain SAP 
-   applications like S/4HANA Cloud.
+   applications like S/4HANA Cloud Public Edition.
    ![postbooster](4-2.jpg) 
-5. Click **Connectivity -> Destinations** and confirm the destinations are successfully created.  The destinations shown will vary based on the systems selected during the booster execution.  See screenshot below for relevant destinations if the booster was executed for S/4HANA Public Cloud and SuccessFactors.</br>
+5. Click **Connectivity -> Destinations** and confirm the destinations are successfully created.  The destinations shown will vary based on the systems selected during the booster execution.  See screenshot below for relevant destinations if the booster was executed for S/4HANA Cloud Public Edition and SAP SuccessFactors.</br>
 ![create_wz](2.jpg)  
 
 ## Create NavigationService Destination
@@ -67,7 +67,7 @@
 2. Click **Customization** >> **Trusted Domains**.</br>
 ![update_ias](12.jpg)
 
-3. If necessary, click **Add** to add the domain of your application(s) and click **Save**.  For eg. if your SuccessFactors tenants URL is <--https://hcm-us10.hr.cloud.sap/login?company=yourcompany --> and S/4 Public Cloud URL is <--https://myXXXXXXX.s4hana.cloud.sap --> the entry to add is ***.cloud.sap**.</br>        
+3. If necessary, click **Add** to add the domain of your application(s) and click **Save**.  For eg. if your SuccessFactors tenants URL is <--https://hcm-us10.hr.cloud.sap/login?company=yourcompany --> and S/4HANA Cloud Public Edition URL is <--https://myXXXXXXX.s4hana.cloud.sap --> the entry to add is ***.cloud.sap**.</br>        
 ![update_ias](13.jpg)
 
 
