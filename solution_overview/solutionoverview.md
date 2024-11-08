@@ -10,6 +10,6 @@ Additional Resources:</br>
 [Joule Help Guide](https://help.sap.com/docs/joule)</br>
 [Joule and additional AI Innovations from SAP](https://www.sap.com/canada/products/artificial-intelligence/ai-assistant.html)
 
-This purpose of this guide is to provide step by step instructions on how to set up a unified Joule instance that can work across multiple SAP applications.  In this mission I will primarily focus on Joule configuration in the SAP BTP environment while other application specific configuration is covered in separate missions.  Support for additional systems is being added on a regular basis so make sure to check the links above for support for latest solutions.<br/>
+The setup process for Joule with SAP applications requires integration across multiple SAP components as depicted in the picture below.  This purpose of this guide is to provide step by step instructions on how to set up a unified Joule instance that can work across multiple SAP solutions.  In this mission I will primarily focus on Joule configuration in the SAP BTP environment while other solution specific configuration is covered in separate missions.  Support for additional SAP solutions is being added on a regular basis so make sure to check the links above for updates.<br/>
 ![run_booster](SolutionDiagram.jpg)
 
