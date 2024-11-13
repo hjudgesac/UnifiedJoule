@@ -34,4 +34,5 @@
 
 13. Confirm the status is updated to **Registered** in the BTP Cockpit.</br>                                                                                                                   
 ![register_system](10.jpg)
+
 **Note**: You may have to refresh the BTP Cockpit browser session to see the updated status.
