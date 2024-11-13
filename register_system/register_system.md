@@ -19,7 +19,6 @@
 
 8. Log into SAP SuccessFactors as an admin user and search for **Extension Center**.</br>                                                                                                                   
 ![register_system](6.jpg)
-
 **Note**: If you don't have access to Extension Center, follow the steps in the preparation section.
 
 9. Paste the token received from the BTP admin into the **Integration Token** text box and click **Add**.</br>                                      
@@ -30,5 +29,4 @@
 
 11. Confirm the status is updated to **Registered** in the BTP Cockpit.</br>                                                                                                                   
 ![register_system](9.jpg)
-
 **Note**: You may have to refresh the BTP Cockpit browser session to see the updated status.
