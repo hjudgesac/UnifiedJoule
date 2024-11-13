@@ -56,10 +56,10 @@ Let's take a look at a hypthetical scenario shown in the picture below.  In this
 
 ## 4. Confirm same authentication setup used across SAP systems
 
-To setup a Joule instance that works across different SAP systems the following 3 conditions must be met:
-   1) Systems must be integrated with same SAP Cloud Identity Service tenant.
-   2) The trust setup between SAP Cloud Identity Authentication Service(IAS) and the SAP system should be using the same domain.
-   3) If using a Corporate Identity Provider, the Conditional Authentication settings for the applications must be setup the same way.
+To setup a Joule instance that works across different SAP systems the following conditions must be met:
+  * Systems must be integrated with same SAP Cloud Identity Service tenant.
+  * The trust setup between SAP Cloud Identity Authentication Service(IAS) and the SAP system should be using the same domain.
+  * If using a Corporate Identity Provider, the Conditional Authentication settings for the applications must be setup the same way.
 
 SAP provides a production and non-production instance of SAP Cloud Identity Services free of charge to SAP customers.  All non-prod SAP systems should be integrated with same non-prod Cloud Identity Services tenant and production ones with the production tenant.
 
@@ -83,4 +83,5 @@ To setup Joule for SAP systems, it's important that those systems are registered
   * Register a new system only if it's not already there.
   * System Type of **SAP Cloud Identity Services** should already be listed by default.  Ensure that the SAP Cloud Identity Services tenant for the applications that are in scope for Joule setup is listed.
   * Not all systems have to registered up front.  For example, if you are only going to run the booster for S/4HANA Cloud, there is no need to ensure that SuccessFactors is also registerd under the System Landscape.</br>
+
 ![Preparation](10.jpg)
