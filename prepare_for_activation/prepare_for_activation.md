@@ -40,11 +40,10 @@ If the entitlements are not visible, it could be due to one of these reasons:
 ## 3. Choose Data Center for Joule Setup
 
 Joule is BTP Service that works with multiple SAP solutions.  The number of SAP solutions supported with Joule is growing on a regular basis so it's important to choose a data center for Joule setup that can work for various SAP systems that you may have in your landscape - even if those systems are not in scope for Joule setup now.  There are several factors that determine which data center to choose for Joule setup.  Some factors to consider:</br>
-
-  1) What are the currently supported datacenters for Joule?</br>
-  2) Which SAP solutions will Joule be setup for and what are datacenters of those solutions?</br>
-  3) Are there any legal requirements to choose a datacenter in particular region?</br>
-  4) Do you have prefernce for particular hyperscalar such AWS, Azure, Google etc.?</br>
+1) What are the currently supported datacenters for Joule?</br>
+2) Which SAP solutions will Joule be setup for and what are datacenters of those solutions?</br>
+3) Are there any legal requirements to choose a datacenter in particular region?</br>
+4) Do you have prefernce for particular hyperscalar such AWS, Azure, Google etc.?</br>
 
 The picture below depicts the process to follow to determine data center selection.
  ![Preparation](4.jpg)
