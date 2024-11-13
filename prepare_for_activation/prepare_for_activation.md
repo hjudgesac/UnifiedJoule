@@ -31,9 +31,9 @@ Activation of Joule requires configuration in multiple systems.  It's important 
      ![Preparation](3.jpg)  
 
 If the entitlements are not visible, it could be due to one of these reasons:
-  1) You don't have licenses for Joule.
-  2) Joule entilements were added to different BTP Global Account to which you don't have Global Account Admin access.
-  3) The start date for the Joule contract is at future date hence the entilements won't be visible in BTP until that date.
+1) You don't have licenses for Joule.
+2) Joule entilements were added to different BTP Global Account to which you don't have Global Account Admin access.
+3) The start date for the Joule contract is at future date hence the entilements won't be visible in BTP until that date.
 
   In the scenarios above, please work with Account Executive, BTP Customer Success Partner or SuccessFactors Customer Success Partner to resolve the entitlements issue prior to proceeding further with this mission.
 
