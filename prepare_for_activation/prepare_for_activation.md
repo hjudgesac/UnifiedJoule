@@ -47,6 +47,7 @@ Joule is BTP Service that works with multiple SAP solutions.  The number of SAP 
 
 The picture below depicts the process to follow to determine data center selection.
  ![Preparation](4.jpg)
+
 For Step 1, review the list of Joule supported data centers from the help page: [Data Centers Supported for Joule](https://help.sap.com/docs/joule/serviceguide/data-centers-supported-by-joule)</br>
 Step 2 requires finding the data centers for the respective SAP systems for which Joule will be setup.  This will be different for each system so refer to solution specific documenation to find the respective data centers.</br>
 
