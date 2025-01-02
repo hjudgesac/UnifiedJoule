@@ -11,7 +11,7 @@
 5. Specify a **System Name** of your choice and select **SAP S/4HANA Cloud** from the **System Type** dropdown and click **Add**.</br>  
 ![register_system](2.png)
 
-6. Select **All Communication Scenarios** from the dropdwon and click **Get Token**.</br>        
+6. Select **All Communication Scenarios** from the dropdown and click **Get Token**.</br>        
 ![register_system](3-0.png)
 
 7. Copy the **Registration Token** value and share it with your S/4HANA Cloud Public Edition Admin.  Close the token registration screen.</br>                                                         
