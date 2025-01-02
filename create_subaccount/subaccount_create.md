@@ -57,8 +57,8 @@
 **NOTE**:  Do not add trailing slash(/) at the end of the URL.</br>    
 ![run_booster](15.jpg)
 
-3.  Click the **Add** button again to add additional application(eg. S/4AHANA Cloud Public Edition) URLs for which Joule will be configured.
+3.  Click the **Add** button again to add URLs for additional applications (such as S/4AHANA Cloud Public Edition).
 ![run_booster](16.jpg)
 
-5. Similarly add URLs for other applications which will be setup for Joule.
+4. Similarly add URLs for other applications that will be setup for Joule.
  
