@@ -2,10 +2,10 @@
 1. From the Navigation Pane on the left, select **Instances and Subscriptions**.  Click **Create**. </br>
 ![create_wz](1.jpg)
 
-2. Select **SAP Build Work Zone, standard edition** from Service dropdown and **Subscriptions >> foundation** from the Plan dropdown. Click **Create**.</br> 
+2. Select **SAP Build Work Zone, standard edition** from the Service dropdown and **Subscriptions >> foundation** from the Plan dropdown. Click **Create**.</br> 
 ![create_wzr](2.jpg)   
 
-3. Under **Instances and Subscriptions** click **Create** button again. 
+3. Under **Instances and Subscriptions**, click the **Create** button again. 
 4. Select **SAP Build Work Zone, standard edition** from Service dropdown and **instances >> foundation** from the Plan dropdown.</br>
 ![create_wz](3.jpg)  
 
@@ -18,7 +18,7 @@
 7. Click the **navigation arrow** to view the Work Zone instace details.</br>                                     
 ![create_wzr](6-1.jpg)
 
-8. Under **Service Keys** click **Create**.</br>                                                       
+8. Under **Service Keys**, click **Create**.</br>                                                       
 ![create_wz](7.jpg)
 
 9. Specify a **Service Key Name** and click **Create**.</br>                  
