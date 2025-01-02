@@ -6,7 +6,7 @@
 ![create_trust](2.jpg)   
 
 3. Choose the appropriate domain for your SAP Cloud Identity Services tenant.  Select either **ias.accounts.ondemand.com** or **ias.accounts.cloud.sap** and click **Next**.            
-**Note**: Refer to the preparation section of the mission for more information.  All apps which will be configured for Joule setup should be integrated with IAS using the same domain.  In most cases, setup the BTP subacccount trust using **cloud.sap** domain.</br>           
+**Note**: Refer to the preparation section of the mission for more information.  All apps that will be configured for Joule setup should be integrated with IAS using the same domain.  In most cases, set up the BTP subacccount trust using **cloud.sap** domain.</br>           
 ![create_trust](3.jpg)       
 
 4. Leave the default settings and click **Next**.</br>        
