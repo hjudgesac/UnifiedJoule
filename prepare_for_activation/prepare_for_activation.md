@@ -77,7 +77,13 @@ In order for Joule to work, it requires certain attributes from the user profile
 To enable this settings, ensure **Use Identity Authentication user store** toggle is enabled under the Identity Federation Settings of your Corporate Identity Provider setup in SAP Cloud Identity Services.  For more information on this setting, refer to [Configure Identity Federation](https://help.sap.com/docs/cloud-identity-services/cloud-identity-services/corp-idp-configure-identity-federation?version=Cloud&q=identity+Federation)</br>
 ![Preparation](9.jpg)
 
-## 6. Register Systems in SAP BTP
+## 6. SAP Cloud Identity Provisioning Service running on Neo or SAP Cloud Identity Services Landscape
+
+Joule setup for different LOB solutions like SuccessFactors leverage SAP Cloud Identity Provisioning Service to read users from SuccessFactors and provision them to SAP Build Work Zone.  This requires that SAP Build Work Zone, standard edition is available as a connector under target systems in SAP Cloud Identity Provisioning Service (IPS).  This connector may not be available on IPS tenants running on NEO landscapes.  It's recommended customers migrate IPS from NEO to IPS running on SAP Cloud Identity Provisioning Service (SCI) landscape.  In most cases this migration can be done in a matter of minutes.  For more information on how to perform this migration, refer to the following links:
+* [Blog: Go for your quick win! Migrate Identity Provisioning tenants to SAP Cloud Identity infrastructure](https://community.sap.com/t5/technology-blogs-by-sap/go-for-your-quick-win-migrate-identity-provisioning-tenants-to-sap-cloud/ba-p/13536739)
+* [Help Documenation: Migrate Identity Provisioning Bundle Tenant](https://help.sap.com/docs/identity-provisioning/identity-provisioning/migrate-identity-provisioning-bundle-tenant)
+
+## 7. Register Systems in SAP BTP
 
 To set up Joule for SAP systems, it's important that those systems are registered under BTP **System Landscape**.  It's possible that the systems are already registered automatically or as part of another project.  If that's not the case, you may have to register the systems using the subsequent steps mentioned in this mission.  For the purpose of this mission I am using SAP SuccessFactors and SAP S/4HANA Cloud Public Edition to showcase the setup process.  Few things to note:
   * Register a new system only if it's not already there.
