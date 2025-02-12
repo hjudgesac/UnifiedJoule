@@ -40,7 +40,8 @@
 3. Search for "Joule".  Click **Joule** and choose **foundation (Application)** from the list of available plans.</br>
 ![run_booster](11.jpg)
 
-4. Search for "workzone".  Click **SAP Build Work Zone, standard edition** and choose the **foundation** and **foundation (Application)** plans.  Click **Add 3 Service Plans**.</br>                                      
+4. Search for "workzone".  Click **SAP Build Work Zone, standard edition** and choose the **foundation** and **foundation (Application)** plans.  Click **Add 3 Service Plans**.</br>
+**NOTE**: Use the **standard** and **standard (Application)** plan instead if you also want to setup Joule for SAP Build Work Zone.
 ![run_booster](12.jpg)
 
 5. Click **Save**.</br>                
