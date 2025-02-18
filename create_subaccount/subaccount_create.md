@@ -10,7 +10,7 @@
 
 4. Specify **Display Name** and **Region** and click **Create**.</br>                              
 ![run_booster](3-1.jpg)   
-**Note**: The **Region** must be from one of the supported data centers for Joule.  See [Data Centers Supported by Joule](https://help.sap.com/docs/joule/serviceguide/data-centers-supported-by-joule)
+**Note**: The **Region** must be from one of the supported data centers for Joule.  See [Data Centers Supported by Joule](https://help.sap.com/docs/JOULE/3fdd7b321eb24d1b9d40605dce822e84/8b4d8708f6d646a995fdc50f8c508f1f.html?version=CLOUD)
 
 5. Click **Enable Cloud Foundry**.</br>  
 ![run_booster](4.jpg)
