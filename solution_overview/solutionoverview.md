@@ -4,7 +4,7 @@ It enables the companion of the Intelligent Enterprise, guiding you through cont
 
 Joule offers conversational interactions between humans and computers to simplify access to information and automate business processes, thus improving both the employee and customer satisfaction. Joule can direct you to the right application to complete your tasks, help you to complete certain tasks, and find the information you're looking for quickly and easily.
 
-Joule is a BTP service that can be hosted in multiple environments and data centers:  Refer to [Data Centers Supported for Joule](https://help.sap.com/docs/joule/serviceguide/data-centers-supported-by-joule).
+Joule is a BTP service that can be hosted in multiple environments and data centers:  Refer to [Data Centers Supported for Joule](https://help.sap.com/docs/JOULE/3fdd7b321eb24d1b9d40605dce822e84/8b4d8708f6d646a995fdc50f8c508f1f.html?version=CLOUD).
 
 Additional Resources:</br>
 [Joule Help Guide](https://help.sap.com/docs/joule)</br>
