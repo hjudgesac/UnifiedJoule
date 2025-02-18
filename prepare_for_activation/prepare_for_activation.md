@@ -48,7 +48,7 @@ Joule is BTP Service that works with multiple SAP solutions.  The number of SAP 
 The picture below depicts the process to follow to determine data center selection.
  ![Preparation](4.jpg)
 
-For Step 1, review the list of Joule supported data centers from the help page: [Data Centers Supported for Joule](https://help.sap.com/docs/joule/serviceguide/data-centers-supported-by-joule)</br>
+For Step 1, review the list of Joule supported data centers from the help page: [Data Centers Supported for Joule](https://help.sap.com/docs/JOULE/3fdd7b321eb24d1b9d40605dce822e84/8b4d8708f6d646a995fdc50f8c508f1f.html?version=CLOUD)</br>
 Step 2 requires finding the data centers for the respective SAP systems for which Joule will be set up.  This will be different for each system so refer to solution specific documentation to find the respective data centers.</br>
 
 Let's take a look at a hypthetical scenario shown in the picture below.  In this scenario, majority of the systems are in North American datacenters so it makes sense to choose one of the North American data centers for Joule setup.  The choice between US EAST (VA), US (Virginia), or US Central (IA) is entirely up to you based on your hyperscaler preference.</br>
