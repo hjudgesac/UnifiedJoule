@@ -55,7 +55,7 @@ Let's take a look at a hypthetical scenario shown in the picture below.  In this
  ![Preparation](5.jpg)
 
 ## 4. Confirm same authentication setup used across SAP systems
-
+See [Setting Up a Unified Joule Instance: Key Considerations and Common Questions](https://community.sap.com/t5/technology-blog-posts-by-sap/setting-up-a-unified-joule-instance-key-considerations-and-common-questions/ba-p/14126614).</br>
 To set up a Joule instance that works across different SAP systems, the following conditions must be met:
   * Systems must be integrated with the same SAP Cloud Identity Service tenant.
   * The trust setup between SAP Cloud Identity Authentication Service(IAS) and the SAP system should be using the same domain.
@@ -69,7 +69,7 @@ Furthermore, if your SAP Cloud Identity Authentication Service is set up to use 
 ![Preparation](8.jpg)
 
 ## 5. Validate Identity Federation Settings in SAP Cloud Identity Services
-
+See [Setting Up a Unified Joule Instance: Key Considerations and Common Questions](https://community.sap.com/t5/technology-blog-posts-by-sap/setting-up-a-unified-joule-instance-key-considerations-and-common-questions/ba-p/14126614).</br>
 In order for Joule to work, it requires certain attributes from the user profile in SAP Cloud Identity Services.  Specifically the Global User ID(GUID) field is used by the Joule application.  To ensure this attribute is read from SAP Cloud Identity Services user profile, the **Identity Federation** Settings may have to be enabled in your system.  This setting is relevant:
   * if you have a Corporate Identity Provider configured in SAP Cloud Identity Services
   * and your application is configured to delegate the authentication request to that corporate IDP
@@ -78,7 +78,7 @@ To enable this settings, ensure **Use Identity Authentication user store** toggl
 ![Preparation](9.jpg)
 
 ## 6. SAP Cloud Identity Provisioning Service running on Neo or SAP Cloud Identity Services Landscape
-
+See [Setting Up a Unified Joule Instance: Key Considerations and Common Questions](https://community.sap.com/t5/technology-blog-posts-by-sap/setting-up-a-unified-joule-instance-key-considerations-and-common-questions/ba-p/14126614).</br>
 Joule setup for different LOB solutions like SuccessFactors leverage SAP Cloud Identity Provisioning Service to read users from SuccessFactors and provision them to SAP Build Work Zone.  This requires that SAP Build Work Zone, standard edition is available as a connector under target systems in SAP Cloud Identity Provisioning Service (IPS).  This connector may not be available on IPS tenants running on NEO landscapes.  It's recommended customers migrate IPS from NEO to IPS running on SAP Cloud Identity Provisioning Service (SCI) landscape.  In most cases this migration can be done in a matter of minutes.  For more information on how to perform this migration, refer to the following links:
 * [Blog: Go for your quick win! Migrate Identity Provisioning tenants to SAP Cloud Identity infrastructure](https://community.sap.com/t5/technology-blogs-by-sap/go-for-your-quick-win-migrate-identity-provisioning-tenants-to-sap-cloud/ba-p/13536739)
 * [Help Documenation: Migrate Identity Provisioning Bundle Tenant](https://help.sap.com/docs/identity-provisioning/identity-provisioning/migrate-identity-provisioning-bundle-tenant)
