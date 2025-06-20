@@ -35,7 +35,7 @@ If the entitlements are not visible, it could be due to one of these reasons:
   * Joule entitlements were added to a different BTP Global Account to which you don't have Global Account Admin access.
   * The start date for the Joule contract is at a future date hence the entitlements won't be visible in BTP until that date.
 
-  In the scenarios above, please work with your Account Executive, BTP Customer Success Partner or SuccessFactors Customer Success Partner to resolve the entitlements issue prior to proceeding further with this mission.
+  In the scenarios above, please work with your Account Executive, BTP Customer Success Partner or SuccessFactors Customer Success Partner to resolve the entitlements issue prior to proceeding further with this mission.  It is also possibile to acquire the Joule base entitlement from [SAP Store](https://www.sap.com/store.html).  Make sure to select the correct BTP Global Account when acquiring the Joule base entitlement thorugh SAP Store.
 
 ## 3. Choose Data Center for Joule Setup
 
