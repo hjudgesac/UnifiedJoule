@@ -16,23 +16,6 @@
 5. Click **Connectivity -> Destinations** and confirm the destinations are successfully created.  The destinations shown will vary based on the systems selected during the booster execution.  See screenshot below for relevant destinations if the booster was executed for S/4HANA Cloud Public Edition and SAP SuccessFactors.</br>
 ![create_wz](2.jpg)  
 
-## Create NavigationService Destination
-1. Click **Create Destination**.</br>
-![create_destination](14.jpg)
-
-2. Specify the information below to create the destination and click **Save**:
-  * Name: **NavigationService**
-  * Type: **HTTP**
-  * URL: <--**portal-service** url from the key file downloaded earlier-->
-  * Proxy Type: **Internet**
-  * Authentication: **OAuth2UserTokenExchange**
-  * Token Service URL: <--**url** field from the key file downloaded earlier.  Make sure to add **/oauth/token** to end of the URL-->
-  * Token Service URL Type: **Dedicated**
-  * Client ID: <--**clientid** from key file downloaded earlier-->
-  * Client Secret: <--**clientsecret** from key file downloaded earlier-->
-  * Use default JDK truststore: **checked**</br>
-![create_destination](15.jpg)
-
 ## **Update application configuration in SAP Cloud Identity Authentication Service**
 1. Access the administration console of SAP Cloud Identity Services tenant using one of the URL formats below:
   * https://your-ias-tenant.accounts.ondemand.com/admin
