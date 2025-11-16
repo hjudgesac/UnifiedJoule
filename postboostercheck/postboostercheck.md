@@ -30,16 +30,18 @@
 
 4. Validate that both **das-ias** and **Document Grounding** applications are created in SAP Cloud Identity Services.  These are automatically created by the Joule booster.  Note that the application names will also include your subaccount name in brackets.
 ![update_ias](5-1.jpg)
-4. Select one of your application for which Joule is being setup for.  For eg. SuccessFactors and click on **Conditional Authentication**.</br>
+
+5. Select one of your application for which Joule is being setup for.  For eg. S/4HANA Cloud Private Edition and click on **Conditional Authentication**.</br>
 ![update_ias](9.jpg)
-5. Validate the **Conditional Authentication** settings for the application, but do not change anything in the existing setup.  The settings here would fall into one of the following 3 scenarios:
+
+6. Validate the **Conditional Authentication** settings for the application, but do not change anything in the existing setup.  The settings here would fall into one of the following 3 scenarios:
  * Scenario 1: Application is setup to use Identity Authentication as the Default Identity Provider
  * Scenario 2: Application is setup to use Identity Authentication as the Default Identity Provider but there are conditional rules setup to delegate authentication to a 3rd party corporate IDP
  * Scenario 3: 3rd party IDP is setup as the Default Identity Provider eg. OKTA in my screenshot below.</br>
 ![update_ias](9-1.jpg)
 
-6. Switch to **das-ias (Name of your subaccount)** application that is created by the booster. Set the **Conditional Authentication** settings for this application to match exactly what was set for the application for which Joule is being configured.  For eg. if the SuccessFactors application is setup with Scenario 3, you must also change Default Identity Provider in this application accordingly.</br>
-**NOTE:** As mentioned in the preparations steps, if the same Joule instance is to be shared across multiple applications (eg SuccessFactors and S/4), then those applications must have the same conditional authentication settings.
+6. Switch to **das-ias (Name of your subaccount)** application that is created by the booster. Set the **Conditional Authentication** settings for this application to match exactly what was set for the application for which Joule is being configured.  For eg. if the S/4 application is setup with Scenario 3, you must also change Default Identity Provider in this application accordingly.</br>
+**NOTE:** If the same Joule instance is to be shared across multiple applications (eg SuccessFactors and S/4), then those applications must have the same conditional authentication settings.
 ![create_trust](image.png)
 
 ## **Update Trusted Domains settings**
